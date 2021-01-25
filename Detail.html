@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+
+    <!-- format css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet"> 
+
+</head>
+<body>    
+    <div class="wrapper">   
+        <div class="overlay"></div>  
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-header__logo">
+                    <img class="sidebar-header__logo-img" src="./img/logo.svg" alt="">
+                    <div class="sidebar-header__logo-title">UN Work</div>
+                </div>
+                <button class="sidebar-icon expand">
+                    <img class="sidebar-header__icon active icon-sidebar" src="./img/sidebar.svg" alt="">
+                    <img class="sidebar-header__icon active icon-close" src="./img/close.svg" alt="">
+                </button>
+            </div>
+            <div class="sidebar-content">
+                <a href="" class="sidebar-content__item sidebar-content__item--action">
+                    <img class="icon__medium sidebar-content__item-img1" src="./img/dashboard.svg" alt="">                    
+                    <div class="sidebar-content__item-title">Dashboard</div>
+                </a>
+                <a href="" class="sidebar-content__item">
+                    <img class="icon__medium sidebar-content__item-img1" src="./img/task.svg" alt="">
+                    <div class="sidebar-content__item-title">Tasks</div>
+                </a>
+                <a href="" class="sidebar-content__item">
+                    <img class="icon__medium sidebar-content__item-img1" src="./img/project.svg" alt="">
+                    <div class="sidebar-content__item-title">Projects</div>
+                </a>
+                <a href="" class="sidebar-content__item">
+                    <img class="icon__medium sidebar-content__item-img1" src="./img/inbox.svg" alt="">
+                    <div class="sidebar-content__item-title">Inbox</div>
+                </a>
+            </div>
+            <div class="sidebar-content sidebar-content__project">
+                <div class="sidebar-content__head">
+                    <div class="sidebar-content__head-title">Project</div>
+                    <img class="sidebar-content__head-img icon__medium active" src="./img/plus.svg" alt="">                    
+                </div>
+                <a href="" class="sidebar-content__item">
+                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle.svg" alt="">                    
+                    <div class="sidebar-content__item-title">Changgy Mobile App</div>
+                </a>
+                <a href="" class="sidebar-content__item">
+                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle_green.svg" alt="">
+                    <div class="sidebar-content__item-title">Worktime Manager</div>
+                </a>
+                <a href="" class="sidebar-content__item">
+                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle_blue.svg" alt="">
+                    <div class="sidebar-content__item-title">Payroll App</div>
+                </a>
+                <a href="" class="sidebar-content__item">
+                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle_yellow.svg" alt="">
+                    <div class="sidebar-content__item-title">App Base Drive</div>
+                </a>
+            </div>           
+
+        </div>
+        <div class="view">
+            <!-- main header -->
+            <div class="header">
+                <div class="header__search">
+                    <button class="show-mobile sidebar-icon">
+                        <img class="sidebar-header__icon active" src="./img/sidebar2.svg" alt="">
+                    </button>
+                    <div class="header__search-input">
+                        <input type="text" placeholder="Search task, project">
+                    </div>
+                    <button class="icon-search"><img src="./img/search.svg" alt=""></button>
+                    <!-- <div class="header__search-button">
+                    </div> -->
+                </div>
+                <div class="header__right">
+                    <button class="header__right-item btn btn__primary">
+                        <img class="icon__medium" src="./img/plus_add.svg" alt=""> 
+                        New
+                        
+                    </button>
+                    <div class="header__right-item header__right-notify">
+                        <img class="icon__medium icon__notify active" src="./img/notify.svg" alt="">
+                    </div>
+                    <div class="header__right-item header__right-user"><img class="active" src="./img/avatar.png" alt=""> </div>
+                </div>
+            </div>
+            <div class="content content-detail">  
+                <div class="grid wide">
+                    <div class="row sm-gutter">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="content__content content__content-detail">
+                                <div class="check-list">
+                                    <div class="check-list1">
+                                        <input type="checkbox" id="check-item1" />
+                                        <label for="check-item1" class="">New Product Lanch</label>
+                                        <div class="content__content-item-left-content-info">
+                                                <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg"></img>
+                                                eHealth 4.1</div>
+                                    </div>
+                                    <div class="content__content-item-right content__content-detail-right">                                        
+                                        <div class="content__content-item-right-status">
+                                            <div class="content__content-item-right-status-icon status-icon--in-progress"></div>
+                                        </div>            
+                                    </div>
+                                </div>
+                                <div class="check-list content__content-item--new">
+                                    <div class="check-list1">
+                                        <input type="checkbox" id="check-item2" />
+                                        <label for="check-item2" class="">Business Preparation for inspections</label>
+                                        <div class="content__content-item-left-content-info">
+                                                <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg"></img>
+                                                eHealth 4.1</div>
+                                    </div>
+                                    <div class="content__content-item-right content__content-detail-right">                                        
+                                        <div class="content__content-item-right-status">
+                                            <div class="content__content-item-right-status-icon status-icon--new"></div>
+                                        </div>            
+                                    </div>
+                                </div>
+                                <div class="check-list">
+                                    <div class="check-list1">
+                                        <input type="checkbox" id="check-item3" />
+                                        <label for="check-item3" class="content__content-item-left-label-name--line">Marketing Research Plan</label>
+                                        <div class="content__content-item-left-content-info">
+                                                <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg"></img>
+                                                eHealth 4.1</div>
+                                    </div>
+                                    <div class="content__content-item-right content__content-detail-right">                                        
+                                        <div class="content__content-item-right-status">
+                                            <div class="content__content-item-right-status-icon status-icon--complete"></div>
+                                        </div>            
+                                    </div>
+                                </div>
+                                <div class="check-list">
+                                    <div class="check-list1">
+                                        <input type="checkbox" id="check-item4" />
+                                        <label for="check-item4" class="">UNI Corp Project Plan</label>
+                                        <div class="content__content-item-left-content-info">
+                                                <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg"></img>
+                                                eHealth 4.1</div>
+                                    </div>
+                                    <div class="content__content-item-right content__content-detail-right">                                        
+                                        <div class="content__content-item-right-status">
+                                            <div class="content__content-item-right-status-icon status-icon--in-progress"></div>
+                                        </div>            
+                                    </div>
+                                </div>
+                                <div class="check-list">
+                                    <div class="check-list1">
+                                        <input type="checkbox" id="check-item5" />
+                                        <label for="check-item5" class="">Startup Company Initiative</label>
+                                        <div class="content__content-item-left-content-info">
+                                                <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg"></img>
+                                                eHealth 4.1</div>
+                                    </div>
+                                    <div class="content__content-item-right content__content-detail-right">                                        
+                                        <div class="content__content-item-right-status">
+                                            <div class="content__content-item-right-status-icon status-icon--in-progress"></div>
+                                        </div>            
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col l-8 m-12 c-12">
+                            <div class="content__detail">
+                                <div class="content__detail-head">
+                                    <div class="content__detail-head-top">
+                                        <div class="content__detail-head-top-title">Business Preparation for inspections</div> 
+                                        <div class="content__detail-head-top-mark">
+                                            <img class="content__detail-head-top-mark-icon icon__medium" src="./img/check2.png"></img> 
+                                            <button> Mark Complete</button>
+                                        </div>
+                                    </div>
+                                    <div class="content__detail-head-info">
+                                        <div class="content__detail-head-info-item">
+                                            <img src="./img/user.svg" alt="">
+                                            <div class="content__detail-head-info-detail">
+                                                <div class="detail-note">Assignee to</div>
+                                                <div class="detail-info">Uoc Nguyen</div>
+                                            </div>
+                                        </div>
+                                        <div class="content__detail-head-info-item">
+                                            <img class="content__detail-head-info-item-img hide-on-mobile" src="./img/date.png" alt="">
+                                            <div class="content__detail-head-info-detail">
+                                                <div class="detail-note">Create date</div>
+                                                <div class="detail-info">10/02/2018</div>
+                                            </div>
+                                        </div>
+                                        <div class="content__detail-head-info-item">
+                                            <img class="content__detail-head-info-item-img hide-on-mobile" src="./img/date.png" alt="">
+                                            <div class="content__detail-head-info-detail">
+                                                <div class="detail-note">Due date</div>
+                                                <div class="detail-info">01/12/2019</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content__detail-descript">
+                                    <div class="content__detail-descript-item1">
+                                        <div class="content__detail-descript-item1-title">
+                                            Task Progress
+                                        </div>
+                                        <div class="content__detail-descript-item1-progress">
+                                            <div id="progressbar">
+                                                <div></div>
+                                            </div>
+                                            <div class="content__detail-descript-item1-progress-value">30%</div>
+
+                                        </div>
+                                        <!-- <progress max="100" value="30"></progress> -->
+                                        
+                                    </div>
+                                    <div class="content__detail-descript-item2">
+                                        <div class="content__detail-descript-item2-title">
+                                            description
+                                        </div>
+                                        <div class="content__detail-descript-item2-descript">
+                                            Responsive and fluid design – looks great on: desktops, tablets and mobile devices <br>
+                                            Dashboard with different stats <br>
+                                            Project and task management (create, edit, assign, etc) <br>
+                                            Client and staff management
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content__detail-descript-item3">
+                                        <div class="content__detail-descript-item3-title">
+                                            <img class="icon__medium" src="./img/sidebar2.svg" alt="">
+                                            Checklist
+                                        </div>
+                                        <div class="content__detail-descript-item3-list">
+                                            <div class="check-list2">
+                                                <input type="checkbox" id="checkbox11" />
+                                                <label for="checkbox11"></label>	
+                                                <div class="content__detail-descript-item3-check-label content__detail-descript-item3-check-label--line">Pick date</div>
+                                            </div>
+                                            <div class="check-list2">
+                                                <input type="checkbox" id="checkbox12" />
+                                                <label for="checkbox12"></label>	
+                                                <div class="content__detail-descript-item3-check-label">Select speakers</div>
+                                            </div>
+                                            <div class="check-list2">
+                                                <input type="checkbox" id="checkbox13" />
+                                                <label for="checkbox13"></label>	
+                                                <div class="content__detail-descript-item3-check-label">Design Landing Page</div>
+                                            </div>
+
+                                            <div class="check-list2">
+                                                <input type="checkbox" id="checkbox14" />
+                                                <label for="checkbox14"></label>	
+                                                <div class="content__detail-descript-item3-group">
+                                                    <!-- <label for="circle_check2" class="content__detail-descript-item3-check-label"> -->
+                                                        <input class="input-checkbox" type="text" placeholder="Type name subtask"> 
+                                                    <!-- </label> -->
+                                                    <div class="content__detail-descript-item3-ext">
+                                                        <img class="icon__medium active" src="./img/date.png" alt="">
+                                                        <img class="icon__medium active" src="./img/people.PNG" alt="">
+                                                        <img class="icon__medium active" src="./img/inbox.png" alt="">
+                                                    </div>
+                                                    </div>
+                                            </div>
+                                            <!-- <div class="content__detail-descript-item3-check">
+                                                <input type="checkbox" value="none" id="circle_check2" class="circle_check2">
+                                                <img class="icon_check2" src="./img/check.svg"></img>
+                                                    <div class="content__detail-descript-item3-group">
+                                                        <label for="circle_check2" class="content__detail-descript-item3-check-label">
+                                                            <input type="text" placeholder="Type name subtask"> 
+                                                        </label>
+                                                        <div class="content__detail-descript-item3-ext">
+                                                            <img class="icon__medium active" src="./img/date.png" alt="">
+                                                            <img class="icon__medium active" src="./img/people.PNG" alt="">
+                                                            <img class="icon__medium active" src="./img/inbox.png" alt="">
+                                                        </div>
+                                                        </div>
+
+                                            </div> -->
+                                        </div>                                      
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="content__detail-comment">
+                                <textarea type="text" placeholder="Ask a question or post an update…"></textarea>
+                                <div class="content__detail-comment-bottom">
+                                    <div class="content__detail-comment-bottom-ckeditor">
+                                        <img src="./img/bold.svg" class="icon__small active icon__ckeditor content__detail-comment-ckeditor--bold"></img>
+                                        <img src="./img/italic.svg" class="icon__small active icon__ckeditor content__detail-comment-ckeditor--italic"></img>
+                                        <img src="./img/underLine.svg" class="icon__small active icon__ckeditor content__detail-comment-ckeditor--underline"></img>
+                                        <img src="./img/left.svg" class="icon__small active icon__ckeditor content__detail-comment-ckeditor--left"></img>
+                                        <img src="./img/center.svg" class="icon__small active icon__ckeditor content__detail-comment-ckeditor--center"></img>
+                                        <img src="./img/right.svg" class="icon__small active icon__ckeditor content__detail-comment-ckeditor--right"></img>
+                                        <img src="./img/tag@.svg" class="icon__small active icon__ckeditor content__detail-comment-ckeditor--tag"></img>
+                                        <img src="./img/icon.svg" class="icon__small active icon__ckeditor content__detail-comment-ckeditor--icon"></img>
+                                    </div>
+                                    <div class="content__detail-comment-bottom-btn">
+                                        <button class="btn btn__primary">Comment</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <!-- <div class="footer"></div> -->
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
