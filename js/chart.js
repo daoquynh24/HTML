@@ -115,6 +115,12 @@ $(function() {
             plotOptions: {
                 column: {
                     stacking: 'normal'
+                },
+                series: {
+                    pointWidth: 40,
+                    pointPadding:0.05,
+                    groupPadding: 0,
+                    pointPadding: 0
                 }
             },
 
