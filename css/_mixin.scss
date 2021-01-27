@@ -1,0 +1,88 @@
+@mixin transition() {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    transition: $value;
+}
+
+@mixin animation($value) {
+    -webkit-animation: $value;
+    -moz-animation: $value;
+    -o-animation: $value;
+    -ms-animation: $value;
+}
+@mixin translateX($value) {
+    transform: translateX($value);
+    -ms-transform: translateX($value);
+    -webkit-transform: translateX($value);
+}
+
+@mixin translateY($value) {
+    transform: translateY($value);
+    -ms-transform: translateY($value);
+    -webkit-transform: translateY($value);
+}
+
+@mixin scale($value) {
+    transform: scale($value);
+    -ms-transform: scale($value);
+    -webkit-transform: scale($value);
+}
+
+@mixin scaleX($value) {
+    transform: scaleX($value);
+    -ms-transform: scaleX($value);
+    -webkit-transform: scaleX($value);
+}
+
+@mixin scaleY($value) {
+    transform: scaleY($value);
+    -ms-transform: scaleY($value);
+    -webkit-transform: scaleY($value);
+}
+
+@mixin rotate($value) {
+    transform: rotate($value);
+    -ms-transform: rotate($value);
+    -webkit-transform: rotate($value);
+}
+
+@mixin rotateX($value) {
+    transform: rotateX($value);
+    -ms-transform: rotateX($value);
+    -webkit-transform: rotateX($value);
+}
+
+@mixin rotateY($value) {
+    transform: rotateY($value);
+    -ms-transform: rotateY($value);
+    -webkit-transform: rotateY($value);
+}
+
+// transform
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    transform: $value;
+}
+@mixin mediaMaxWidth($w_width) {
+    @media only screen and (max-width: $w_width) {
+        @content; 
+    }
+}
+@mixin mediaMinWidth($w_width) {
+    @media only screen and (min-width: $w_width) {
+        @content;
+    }
+}
+@mixin bshadow ($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
