@@ -1,0 +1,98 @@
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; /* Tương ứng 12px . 1rem = 10px*/
+    line-height: 1.6rem;
+    font-family: 'SFProDisplay','Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: $background-color;
+    color: $text-color;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.icon__medium{
+    width: 1.6rem;
+}
+.icon__small{
+    width: 1rem;    
+}
+.icon__regular{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.5rem;
+}
+a{
+    text-decoration: none;
+}
+
+button{
+    background: transparent;
+}
+a,
+button:hover{
+    cursor: pointer;
+    color: transparent -50%;
+}
+img.active:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.btn, button, input:hover,
+.btn, button, input:focus{
+    border: none;
+    outline: none;
+}
+
+.btn__primary{
+    background-color: $btn-color;
+    color: $white-color;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    height: 4rem;
+    vertical-align: middle;
+    box-shadow: 0 1px 2px #ccc;
+}
+.btn__default-small{
+    background-color: $white-color;
+    color: $text-gray-color;
+    border-radius: 0.2rem;
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+.text--blue{
+    color: $blue-color;
+}
+.text--green{
+    color: $green-color;
+}
+.text--yellow{
+    color: $yellow-color;
+}
+.line-through{
+    text-decoration: line-through;
+    text-decoration-color: $text-gray-color;
+}
+table{
+    width: 100%;
+}
+
+th,td{
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid $boder-color;
+}
+
+tbody tr:last-child td{
+    border-bottom: none;
+}
+

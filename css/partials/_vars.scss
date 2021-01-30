@@ -5,7 +5,8 @@ $black-color: #000;
 $green-color: #1EA85A;
 $yellow-color:#FFBE3C;
 
-$text-color: rgba(255, 255, 255, 0.301);  
+// $text-color: rgba(255, 255, 255, 0.301); 
+$text-color:#505157;
 $text-gray-color: #8D8D8E; 
 $text-blue-color: #153673;
 $boder-color: #d8d8d841;
@@ -14,5 +15,5 @@ $background-color: #e6e6e644;
 
 $hover-color: #e6e6e671;
 // $sidebar-width: 24rem; 
-$sidebar-width: 240px; 
-$view-width: calc(100% - $sidebar-width);
+$sidebarWidth: 240px; 
+$viewWidth: calc(100% - $sidebarWidth);

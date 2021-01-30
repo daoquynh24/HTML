@@ -8,9 +8,8 @@
     <!-- format css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/responsive.css">
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet"> 
@@ -19,275 +18,301 @@
 <body>    
     <div class="wrapper">   
         <div class="overlay"></div>  
+
+        <!-- sidebar -->
         <div class="sidebar">
             <div class="sidebar-header">
-                <div class="sidebar-header__logo">
-                    <img class="sidebar-header__logo-img" src="./img/logo.svg" alt="">
-                    <div class="sidebar-header__logo-title">UN Work</div>
+                <div class="logo">
+                    <img class="logo-img" src="./img/logo.svg" alt="">
+                    <div class="logo-title">UN Work</div>
                 </div>
-                <button class="sidebar-icon expand">
-                    <img class="sidebar-header__icon active icon-sidebar" src="./img/sidebar.svg" alt="">
-                    <img class="sidebar-header__icon active icon-close" src="./img/close.svg" alt="">
+                <button class="sidebar-icon">
+                    <img class="active icon-sidebar" src="./img/sidebar.svg" alt="">
+                    <img class="active icon-close" src="./img/close.svg" alt="">
                 </button>
             </div>
             <div class="sidebar-content">
-                <a href="" class="sidebar-content__item sidebar-content__item--action">
-                    <img class="icon__medium sidebar-content__item-img1" src="./img/dashboard.svg" alt="">                    
-                    <div class="sidebar-content__item-title">Dashboard</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img1" src="./img/task.svg" alt="">
-                    <div class="sidebar-content__item-title">Tasks</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img1" src="./img/project.svg" alt="">
-                    <div class="sidebar-content__item-title">Projects</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img1" src="./img/inbox.svg" alt="">
-                    <div class="sidebar-content__item-title">Inbox</div>
-                </a>
+                <ul class="sidebar-menu">
+                    <li class="item--action">
+                        <a href="#" class="item">
+                            <img class="icon__medium img1" src="./img/dashboard.svg" alt="">                    
+                            <div class="title">Dashboard</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img1" src="./img/task.svg" alt="">
+                            <div class="title">Tasks</div>
+                            <img class="icon__small icon-down" src="./img/down1.svg" alt="">
+                        </a>
+                        <ul>
+                            <li><a href="#"><span class="icon-mobile"></span><div class="title">Task 1</div></a></li>
+                            <li><a href="#"><span class="icon-mobile"></span><div class="title">Task 2</div></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img1" src="./img/project.svg" alt="">
+                            <div class="title">Projects</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img1" src="./img/inbox.svg" alt="">
+                            <div class="title">Inbox</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="sidebar-content sidebar-content__project">
-                <div class="sidebar-content__head">
-                    <div class="sidebar-content__head-title">Project</div>
-                    <img class="sidebar-content__head-img icon__medium active" src="./img/plus.svg" alt="">                    
+            <div class="sidebar-content content-project">
+                <div class="head">
+                    <div class="title project-title">Project</div>
+                    <img class="icon__medium active" src="./img/plus.svg" alt="">                    
                 </div>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle.svg" alt="">                    
-                    <div class="sidebar-content__item-title">Changgy Mobile App</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle_green.svg" alt="">
-                    <div class="sidebar-content__item-title">Worktime Manager</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle_blue.svg" alt="">
-                    <div class="sidebar-content__item-title">Payroll App</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle_yellow.svg" alt="">
-                    <div class="sidebar-content__item-title">App Base Drive</div>
-                </a>
-            </div>           
 
+                <ul>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img2" src="./img/rectangle.svg" alt="">                    
+                            <div class="title">Changgy Mobile App</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img2" src="./img/rectangle_green.svg" alt="">
+                            <div class="title">Worktime Manager</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img2" src="./img/rectangle_blue.svg" alt="">
+                            <div class="title">Payroll App</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img2" src="./img/rectangle_yellow.svg" alt="">
+                            <div class="title">App Base Drive</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>          
         </div>
 
         <!-- view -->
         <div class="view">
             <!-- main header -->
             <div class="header">
-                <div class="header__search">
+                <div class="search">
                     <button class="show-mobile sidebar-icon">
-                        <img class="sidebar-header__icon active" src="./img/sidebar2.svg" alt="">
+                        <img class="sidebar-icon2 active" src="./img/sidebar2.svg" alt="">
                     </button>
-                    <div class="header__search-input">
+                    <div class="search-input">
                         <input type="text" placeholder="Search task, project">
                     </div>
-                    <button class="icon-search"><img src="./img/search.svg" alt=""></button>
+                    <button class="icon-search none-border"><img src="./img/search.svg" alt=""></button>
                     <!-- <div class="header__search-button">
                     </div> -->
                 </div>
-                <div class="header__right">
-                    <button class="header__right-item btn btn__primary">
+                <div class="header-right">
+                    <button class="item btn btn-primary">
                         <img class="icon__medium" src="./img/plus_add.svg" alt=""> 
-                        New
-                        
+                        New                        
                     </button>
-                    <div class="header__right-item header__right-notify">
+                    <div class="item notify">
                         <img class="icon__medium icon__notify active" src="./img/notify.svg" alt="">
                     </div>
-                    <div class="header__right-item header__right-user"><img class="active" src="./img/avatar.png" alt=""> </div>
+                    <div class="item user"><img class="active" src="./img/avatar.png" alt=""> </div>
                 </div>
             </div>
 
             <!-- content -->
             <div class="content">  
-                <div class="content__head">
-                    <div class="content__head-percent">
-                        <div class="content__head-percent-use">
-                            <div class="content__head-percent-number">50%</div> </div>
-                        <div class="content__head-info">
-                            <div class="content__head-info-title">BaseInc Drive Manager V1.0</div>
-                            <div class="content__head-info-descript">
-                                <img class="icon_medium content__head-info-descript-item" src="./img/user1.png" alt="">
-                                <img class="icon_medium content__head-info-descript-item" src="./img/user2.png" alt="">
-                                <img class="icon_medium content__head-info-descript-item" src="./img/user3.png" alt="">
-                                <img class="icon_medium content__head-info-descript-item" src="./img/user_number.png" alt="">
-                                <div class="content__head-info-descript-share">
+                <div class="head">
+                    <div class="head-percent">
+                        <div class="percent-use">
+                            <div class="percent-number">50%</div> </div>
+                        <div class="head-info">
+                            <div class="info-title">BaseInc Drive Manager V1.0</div>
+                            <div class="info-descript">
+                                <img class="icon_medium descript-item" src="./img/user1.png" alt="">
+                                <img class="icon_medium descript-item" src="./img/user2.png" alt="">
+                                <img class="icon_medium descript-item" src="./img/user3.png" alt="">
+                                <img class="icon_medium descript-item" src="./img/user_number.png" alt="">
+                                <div class="descript-share">
                                     <img src="./img/group_people.svg" alt="">
                                     <button class="btn btn__default-small">Share</button>
                                 </div>
                             </div>    
                         </div>
                     </div>
-                    <div class="content__head-date">
-                        <div class="content__detail-head-info-item">
-                            <img class="content__detail-head-info-item-img" src="./img/date.png" alt="">
-                            <div class="content__detail-head-info-detail">
+                    <div class="head-date">
+                        <div class="info-item">
+                            <img class="info-item-img" src="./img/date.png" alt="">
+                            <div class="info-detail">
                                 <div class="detail-note">Create date</div>
                                 <div class="detail-info">10/02/2018</div>
                             </div>
                         </div>
-                        <div class="content__detail-head-info-item">
-                            <img class="content__detail-head-info-item-img" src="./img/date.png" alt="">
-                            <div class="content__detail-head-info-detail">
+                        <div class="info-item">
+                            <img class="info-item-img" src="./img/date.png" alt="">
+                            <div class="info-detail">
                                 <div class="detail-note">Due date</div>
                                 <div class="detail-info text-change">01/12/2019</div>
                             </div>
                         </div>
                     </div>
                 </div> 
-                <div class="content__progress">
+                <div class="content content__progress">
                     <div class="grid wide">
                         <div class="row sm-gutter">
                             <div class="col l-3 m-6 c-12">
-                                <div class="content__progress-cart"  id="connected">
-                                    <div class="content__progress-cart-head">
-                                        <div class="content__progress-cart-head-title">New</div>
-                                        <div class="content__progress-cart-head-tool">
+                                <div class="progress-cart"  id="connected">
+                                    <div class="cart-head">
+                                        <div class="head-title">New</div>
+                                        <div class="head-tool">
                                             <img class="icon__regular active" src="./img/plus_black.svg" alt="">
                                             <img class="icon__regular active" src="./img/more.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="content__progress-cart-body connected list">
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                    <div class="cart-body connected list">
+                                        <div class="item">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <div class="item">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <div class="item">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <div class="item">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item" style="opacity: 0;">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">                                                
+                                        <div class="item" style="opacity: 0;">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">                                                
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col l-3 m-6 c-12">
-                                <div class="content__progress-cart" id="connected">
-                                    <div class="content__progress-cart-head">
-                                        <div class="content__progress-cart-head-title">In Progress</div>
-                                        <div class="content__progress-cart-head-tool">
+                                <div class="progress-cart" id="connected">
+                                    <div class="cart-head">
+                                        <div class="head-title">In Progress</div>
+                                        <div class="head-tool">
                                             <img class="icon__regular active" src="./img/plus_black.svg" alt="">
                                             <img class="icon__regular active" src="./img/more.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="content__progress-cart-body connected list">
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                    <div class="cart-body connected list">
+                                        <div class="item">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">Meeting UX Team</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <div class="item">
+                                            <div class="item-title">Meeting UX Team</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item" style="opacity: 0;">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">                                                
+                                        <div class="item" style="opacity: 0;">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">                                                
                                             </div>
                                         </div>
-                                        <!-- <div class="content__progress-cart-body-item  content__progress-cart-body-item--active">
-                                            <div class="content__progress-cart-body-item-title">Staff training</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <!-- <div class="item  item--active">
+                                            <div class="item-title">Staff training</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
@@ -297,155 +322,155 @@
                                 </div>
                             </div>
                             <div class="col l-3 m-6 c-12">
-                                <div class="content__progress-cart" id="connected">
-                                    <div class="content__progress-cart-head">
-                                        <div class="content__progress-cart-head-title">Review</div>
-                                        <div class="content__progress-cart-head-tool">
+                                <div class="progress-cart" id="connected">
+                                    <div class="cart-head">
+                                        <div class="head-title">Review</div>
+                                        <div class="head-tool">
                                             <img class="icon__regular active" src="./img/plus_black.svg" alt="">
                                             <img class="icon__regular active" src="./img/more.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="content__progress-cart-body connected list">
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">Email Design</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                    <div class="cart-body connected list">
+                                        <div class="item">
+                                            <div class="item-title">Email Design</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">Finalize presentatio</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <div class="item">
+                                            <div class="item-title">Finalize presentatio</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">Staff training</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <div class="item">
+                                            <div class="item-title">Staff training</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item" style="opacity: 0;">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">                                                
+                                        <div class="item" style="opacity: 0;">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">                                                
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col l-3 m-6 c-12">
-                                <div class="content__progress-cart" id="connected">
-                                    <div class="content__progress-cart-head">
-                                        <div class="content__progress-cart-head-title">Review</div>
-                                        <div class="content__progress-cart-head-tool">
+                                <div class="progress-cart" id="connected">
+                                    <div class="cart-head">
+                                        <div class="head-title">Review</div>
+                                        <div class="head-tool">
                                             <img class="icon__regular active" src="./img/plus_black.svg" alt="">
                                             <img class="icon__regular active" src="./img/more.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="content__progress-cart-body connected list">
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">Quarterly Report Review</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                    <div class="cart-body connected list">
+                                        <div class="item">
+                                            <div class="item-title">Quarterly Report Review</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <div class="item">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <div class="item">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">
-                                                <div class="content__progress-cart-body-item-info-des">
+                                        <div class="item">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/date.svg" alt="">
                                                     23/05/2019
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/sidebar2.svg" alt="">
                                                     3/6
                                                 </div>
-                                                <div class="content__progress-cart-body-item-info-des">
+                                                <div class="item-info-des">
                                                     <img class="icon__small" src="./img/inbox.png" alt="">
                                                     10
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="content__progress-cart-body-item" style="opacity: 0;">
-                                            <div class="content__progress-cart-body-item-title">New Product Lanch</div>
-                                            <div class="content__progress-cart-body-item-info">                                                
+                                        <div class="item" style="opacity: 0;">
+                                            <div class="item-title">New Product Lanch</div>
+                                            <div class="item-info">                                                
                                             </div>
                                         </div>
                                     </div>
@@ -462,8 +487,8 @@
         <!-- <div class="footer"></div> -->
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
-    <script src="./js/jquery.sortable.min.js"></script>
+    <script type="text/javascript" src="./js/main2.js"></script>
+    <script  src="./js/jquery.sortable.min.js"></script>
 
     <script>
 		$(function() {

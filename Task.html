@@ -7,10 +7,8 @@
 
     <!-- format css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/responsive.css">
     
 
     <!-- font -->
@@ -24,237 +22,367 @@
         <!-- sidebar -->
         <div class="sidebar">
             <div class="sidebar-header">
-                <div class="sidebar-header__logo">
-                    <img class="sidebar-header__logo-img" src="./img/logo.svg" alt="">
-                    <div class="sidebar-header__logo-title">UN Work</div>
+                <div class="logo">
+                    <img class="logo-img" src="./img/logo.svg" alt="">
+                    <div class="logo-title">UN Work</div>
                 </div>
-                <button class="sidebar-icon expand">
-                    <img class="sidebar-header__icon active icon-sidebar" src="./img/sidebar.svg" alt="">
-                    <img class="sidebar-header__icon active icon-close" src="./img/close.svg" alt="">
+                <button class="sidebar-icon">
+                    <img class="active icon-sidebar" src="./img/sidebar.svg" alt="">
+                    <img class="active icon-close" src="./img/close.svg" alt="">
                 </button>
             </div>
             <div class="sidebar-content">
-                <a href="" class="sidebar-content__item sidebar-content__item--action">
-                    <img class="icon__medium sidebar-content__item-img1" src="./img/dashboard.svg" alt="">                    
-                    <div class="sidebar-content__item-title">Dashboard</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img1" src="./img/task.svg" alt="">
-                    <div class="sidebar-content__item-title">Tasks</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img1" src="./img/project.svg" alt="">
-                    <div class="sidebar-content__item-title">Projects</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img1" src="./img/inbox.svg" alt="">
-                    <div class="sidebar-content__item-title">Inbox</div>
-                </a>
+                <ul class="sidebar-menu">
+                    <li class="item--action">
+                        <a href="#" class="item">
+                            <img class="icon__medium img1" src="./img/dashboard.svg" alt="">                    
+                            <div class="title">Dashboard</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img1" src="./img/task.svg" alt="">
+                            <div class="title">Tasks</div>
+                            <img class="icon__small icon-down" src="./img/down1.svg" alt="">
+                        </a>
+                        <ul>
+                            <li><a href="#"><span class="icon-mobile"></span><div class="title">Task 1</div></a></li>
+                            <li><a href="#"><span class="icon-mobile"></span><div class="title">Task 2</div></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img1" src="./img/project.svg" alt="">
+                            <div class="title">Projects</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img1" src="./img/inbox.svg" alt="">
+                            <div class="title">Inbox</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="sidebar-content sidebar-content__project">
-                <div class="sidebar-content__head">
-                    <div class="sidebar-content__head-title">Project</div>
-                    <img class="sidebar-content__head-img icon__medium active" src="./img/plus.svg" alt="">                    
+            <div class="sidebar-content content-project">
+                <div class="head">
+                    <div class="title project-title">Project</div>
+                    <img class="icon__medium active" src="./img/plus.svg" alt="">                    
                 </div>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle.svg" alt="">                    
-                    <div class="sidebar-content__item-title">Changgy Mobile App</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle_green.svg" alt="">
-                    <div class="sidebar-content__item-title">Worktime Manager</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle_blue.svg" alt="">
-                    <div class="sidebar-content__item-title">Payroll App</div>
-                </a>
-                <a href="" class="sidebar-content__item">
-                    <img class="icon__medium sidebar-content__item-img2" src="./img/rectangle_yellow.svg" alt="">
-                    <div class="sidebar-content__item-title">App Base Drive</div>
-                </a>
-            </div>           
 
+                <ul>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img2" src="./img/rectangle.svg" alt="">                    
+                            <div class="title">Changgy Mobile App</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img2" src="./img/rectangle_green.svg" alt="">
+                            <div class="title">Worktime Manager</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img2" src="./img/rectangle_blue.svg" alt="">
+                            <div class="title">Payroll App</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <img class="icon__medium img2" src="./img/rectangle_yellow.svg" alt="">
+                            <div class="title">App Base Drive</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>          
         </div>
 
         <!-- view -->
         <div class="view">
             <!-- main header -->
             <div class="header">
-                <div class="header__search">
+                <div class="search">
                     <button class="show-mobile sidebar-icon">
-                        <img class="sidebar-header__icon active" src="./img/sidebar2.svg" alt="">
+                        <img class="sidebar-icon2 active" src="./img/sidebar2.svg" alt="">
                     </button>
-                    <div class="header__search-input">
+                    <div class="search-input">
                         <input type="text" placeholder="Search task, project">
                     </div>
-                    <button class="icon-search"><img src="./img/search.svg" alt=""></button>
+                    <button class="icon-search none-border"><img src="./img/search.svg" alt=""></button>
                     <!-- <div class="header__search-button">
                     </div> -->
                 </div>
-                <div class="header__right">
-                    <button class="header__right-item btn btn__primary">
+                <div class="header-right">
+                    <button class="item btn btn-primary">
                         <img class="icon__medium" src="./img/plus_add.svg" alt=""> 
-                        New
-                        
+                        New                        
                     </button>
-                    <div class="header__right-item header__right-notify">
+                    <div class="item notify">
                         <img class="icon__medium icon__notify active" src="./img/notify.svg" alt="">
                     </div>
-                    <div class="header__right-item header__right-user"><img class="active" src="./img/avatar.png" alt=""> </div>
+                    <div class="item user"><img class="active" src="./img/avatar.png" alt=""> </div>
                 </div>
             </div>
 
             <!-- content -->
             <div class="content">   
-                <div class="content__head">
-                    <div class="content__head-title">Tasks</div>
-                    <div class="content__head-right">
-                        <div class="content__head-right-item content__head-right-item--active">All Tasks</div>
-                        <div class="content__head-right-item">My Tasks</div>
+                <div class="head">
+                    <div class="title">Tasks</div>
+                    <div class="right">
+                        <div class="item item--active">All Tasks</div>
+                        <div class="item">My Tasks</div>
                     </div>
                 </div>
-                <div class="content__content">
-                    <div class="content__content-item">
-                        <!-- <div class="content__content-item-left">
-                            <input type="checkbox" value="none" id="circle_check" class="circle_check">
-                            <img class="icon_check icon_check--active" src="./img/check.svg"></img>
-                            <label for="circle_check" class="content__content-item-left-label">
-                                <div class="content__content-item-left-label-name">New Product Lanch</div>                                   
-                                <div class="content__content-item-left-content-info">
-                                    <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg"></img>
-                                    eHealth 4.1</div>
-                            </label>
-                        </div> -->
-                        <div class="check-list1">
-                            <input type="checkbox" id="check-item7">
-                            <label for="check-item7" class="">New Product Lanch</label>
-                            <div class="content__content-item-left-content-info">
-                                    <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg">
-                                    eHealth 4.1</div>
-                        </div>
-                        <div class="content__content-item-right">
-                            <div class="content__content-item-right-date">
-                                <img class="icon__medium content__content-item-right-date-img" src="./img/date.svg" alt="">
-                                23/05/2019
+                <div class="content-content">
+                    <div class="check-list-item task">
+                        <div class="check-list check-big">
+                            <input class="big" type="checkbox" id="checkbox1"/>
+                            <label class="big" for="checkbox1"></label>
+                            <div class="info info-big">
+                                <div class="">New Product Lanch</div>
+                                <div class="info-tag">
+                                    <img class="icon__small info-icon" src="img/tag.svg">
+                                    eHealth 4.1
+                                </div> 
                             </div>
-                            <div class="content__content-item-right-status">
-                                <div class="content__content-item-right-status-icon status-icon--in-progress"></div>
-                                <div class="content__content-item-right-status-name">In Progress</div>
+                        </div>
+                        <div class="item-right right-task">
+                            <div class="right-date">
+                                <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                <div class="date-value">23/05/2019</div> 
+                            </div>
+                            <div class="right-status">
+                                <div class="status-icon in-progress"></div>
+                                <div class="status-name">In Progress</div>
                             </div>
                         </div>
                     </div>
-                    <div class="content__content-item content__content-item--new">
-                        <div class="check-list1">
-                            <input type="checkbox" id="check-item">
-                            <label for="check-item" class="">Business Preparation</label>
-                            <div class="content__content-item-left-content-info">
-                                    <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg">
-                                    eHealth 4.1</div>
-                        </div>
-                        <div class="content__content-item-right">
-                            <div class="content__content-item-right-date">
-                                <img class="icon__medium content__content-item-right-date-img" src="./img/date.svg" alt="">
-                                23/05/2019
+                    <div class="check-list-item task item--new">
+                        <div class="check-list check-big">
+                            <input class="big" type="checkbox" id="checkbox2"/>
+                            <label class="big" for="checkbox2"></label>
+                            <div class="info info-big">
+                                <div class="">Business Preparation</div>
+                                <div class="info-tag">
+                                    <img class="icon__small info-icon" src="img/tag.svg">
+                                    eHealth 4.1
+                                </div> 
                             </div>
-                            <div class="content__content-item-right-status">
-                                <div class="content__content-item-right-status-icon status-icon--new"></div>
-                                <div class="content__content-item-right-status-name">In Progress</div>
+                        </div>
+                        <div class="item-right right-task">
+                            <div class="right-date">
+                                <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                <div class="date-value">23/05/2019</div> 
+                            </div>
+                            <div class="right-status">
+                                <div class="status-icon new"></div>
+                                <div class="status-name">New</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-list-item task">
+                        <div class="check-list check-big">
+                            <input class="big" type="checkbox" id="checkbox3"/>
+                            <label class="big" for="checkbox3"></label>
+                            <div class="info info-big">
+                                <div class="line-through">Marketing Research Plan</div>
+                                <div class="info-tag">
+                                    <img class="icon__small info-icon" src="img/tag.svg">
+                                    eHealth 4.1
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="item-right right-task">
+                            <div class="right-date">
+                                <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                <div class="date-value">23/05/2019</div> 
+                            </div>
+                            <div class="right-status">
+                                <div class="status-icon complete"></div>
+                                <div class="status-name">Complete</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-list-item task">
+                        <div class="check-list check-big">
+                            <input class="big" type="checkbox" id="checkbox4"/>
+                            <label class="big" for="checkbox4"></label>
+                            <div class="info info-big">
+                                <div class="">UNI Corp Project Plan</div>
+                                <div class="info-tag">
+                                    <img class="icon__small info-icon" src="img/tag.svg">
+                                    eHealth 4.1
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="item-right right-task">
+                            <div class="right-date">
+                                <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                <div class="date-value">23/05/2019</div> 
+                            </div>
+                            <div class="right-status">
+                                <div class="status-icon in-progress"></div>
+                                <div class="status-name">In Progress</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-list-item task">
+                        <div class="check-list check-big">
+                            <input class="big" type="checkbox" id="checkbox5"/>
+                            <label class="big" for="checkbox5"></label>
+                            <div class="info info-big">
+                                <div class="">Startup Company Initiative</div>
+                                <div class="info-tag">
+                                    <img class="icon__small info-icon" src="img/tag.svg">
+                                    eHealth 4.1
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="item-right right-task">
+                            <div class="right-date">
+                                <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                <div class="date-value">23/05/2019</div> 
+                            </div>
+                            <div class="right-status">
+                                <div class="status-icon in-progress"></div>
+                                <div class="status-name">In Progress</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-list-item task">
+                        <div class="check-list check-big">
+                            <input class="big" type="checkbox" id="checkbox6"/>
+                            <label class="big" for="checkbox6"></label>
+                            <div class="info info-big">
+                                <div class="">Setting Up server at Heroku</div>
+                                <div class="info-tag">
+                                    <img class="icon__small info-icon" src="img/tag.svg">
+                                    eHealth 4.1
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="item-right right-task">
+                            <div class="right-date">
+                                <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                <div class="date-value">23/05/2019</div> 
+                            </div>
+                            <div class="right-status">
+                                <div class="status-icon in-progress"></div>
+                                <div class="status-name">In Progress</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-list-item task">
+                        <div class="check-list check-big">
+                            <input class="big" type="checkbox" id="checkbox7"/>
+                            <label class="big" for="checkbox7"></label>
+                            <div class="info info-big">
+                                <div class="">Automated Visual Testing</div>
+                                <div class="info-tag">
+                                    <img class="icon__small info-icon" src="img/tag.svg">
+                                    eHealth 4.1
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="item-right right-task">
+                            <div class="right-date">
+                                <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                <div class="date-value">23/05/2019</div> 
+                            </div>
+                            <div class="right-status">
+                                <div class="status-icon in-progress"></div>
+                                <div class="status-name">In Progress</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-list-item task">
+                        <div class="check-list check-big">
+                            <input class="big" type="checkbox" id="checkbox8"/>
+                            <label class="big" for="checkbox8"></label>
+                            <div class="info info-big">
+                                <div class="">Custom Webpack Config</div>
+                                <div class="info-tag">
+                                    <img class="icon__small info-icon" src="img/tag.svg">
+                                    eHealth 4.1
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="item-right right-task">
+                            <div class="right-date">
+                                <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                <div class="date-value">23/05/2019</div> 
+                            </div>
+                            <div class="right-status">
+                                <div class="status-icon in-progress"></div>
+                                <div class="status-name">In Progress</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-list-item task">
+                        <div class="check-list check-big">
+                            <input class="big" type="checkbox" id="checkbox9"/>
+                            <label class="big" for="checkbox9"></label>
+                            <div class="info info-big">
+                                <div class="">Create atomic components</div>
+                                <div class="info-tag">
+                                    <img class="icon__small info-icon" src="img/tag.svg">
+                                    eHealth 4.1
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="item-right right-task">
+                            <div class="right-date">
+                                <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                <div class="date-value">23/05/2019</div> 
+                            </div>
+                            <div class="right-status">
+                                <div class="status-icon in-progress"></div>
+                                <div class="status-name">In Progress</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---------------------- -->
+                    
+                    
+                    <div class="pagination-table">
+                        <div class="pagi-right">
+                            <div class="total">
+                                <div class="total-value">1-4</div> of
+                                <div class="total-value">4</div>
+                            </div>
+                            <div class="pagination">
+                                <ul>
+                                    <li class="icon-pagi-pre"><a href="#"><img class="number-prev icon__medium active" src="./img/prv.svg" alt=""></a></li>
+                                    <li><a class="item" href="#">1</a></li>
+                                    <!-- <li><a class="item" href="#">2</a></li> -->
+                                    <li><a class="item item--active" href="#">3</a></li>
+                                    <li><a class="item" href="#">4</a></li>
+                                    <li class="icon-pagi-next" ><a href="#"><img class="number-next icon__medium active" src="./img/next.svg" alt=""></a></li>
+                                </ul>
+                                
+                                <!-- <div class="item">1</div>
+                                <div class="item item--active">3</div>
+                                <div class="item">4</div> -->
+                                
                             </div>
 
                         </div>
                     </div>
-                    <div class="content__content-item">
-                        <div class="check-list1">
-                            <input type="checkbox" id="check-item3">
-                            <label for="check-item3" class="content__content-item-left-label-name--line">Marketing Research Plan</label>
-                            <div class="content__content-item-left-content-info">
-                                    <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg">
-                                    eHealth 4.1</div>
+                    <!-- <div class="pagination-table">
+                        <div class="pull-right">
+                            <ul class="pagination">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="active"><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#" class="fa fa-angle-right"></a></li>
+                                <li><a href="#" class="fa fa-angle-double-right"></a></li>
+                            </ul>
                         </div>
-                        <div class="content__content-item-right">
-                            <div class="content__content-item-right-date">
-                                <img class="icon__medium content__content-item-right-date-img" src="./img/date.svg" alt="">
-                                23/05/2019
-                            </div>
-                            <div class="content__content-item-right-status">
-                                <div class="content__content-item-right-status-icon status-icon--complete"></div>
-                                <div class="content__content-item-right-status-name">In Progress</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__content-item">
-                        <div class="check-list1">
-                            <input type="checkbox" id="check-item4">
-                            <label for="check-item4" class="">UNI Corp Project Plan</label>
-                            <div class="content__content-item-left-content-info">
-                                    <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg">
-                                    eHealth 4.1</div>
-                        </div>
-                        <div class="content__content-item-right">
-                            <div class="content__content-item-right-date">
-                                <img class="icon__medium content__content-item-right-date-img" src="./img/date.svg" alt="">
-                                23/05/2019
-                            </div>
-                            <div class="content__content-item-right-status">
-                                <div class="content__content-item-right-status-icon status-icon--in-progress"></div>
-                                <div class="content__content-item-right-status-name">In Progress</div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="content__content-item">
-                        <div class="check-list1">
-                            <input type="checkbox" id="check-item5">
-                            <label for="check-item5" class="">Startup Company Initiative</label>
-                            <div class="content__content-item-left-content-info">
-                                    <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg">
-                                    eHealth 4.1</div>
-                        </div>
-                        <div class="content__content-item-right">
-                            <div class="content__content-item-right-date">
-                                <img class="icon__medium content__content-item-right-date-img" src="./img/date.svg" alt="">
-                                23/05/2019
-                            </div>
-                            <div class="content__content-item-right-status">
-                                <div class="content__content-item-right-status-icon status-icon--in-progress"></div>
-                                <div class="content__content-item-right-status-name">In Progress</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__content-item">
-                        <div class="check-list1">
-                            <input type="checkbox" id="check-item6">
-                            <label for="check-item6" class="">Setting Up server at Heroku</label>
-                            <div class="content__content-item-left-content-info">
-                                    <img class="icon__small content__content-item-left-content-info-icon" src="img/tag.svg">
-                                    eHealth 4.1</div>
-                        </div>
-                        <div class="content__content-item-right">
-                            <div class="content__content-item-right-date">
-                                <img class="icon__medium content__content-item-right-date-img" src="./img/date.svg" alt="">
-                                23/05/2019
-                            </div>
-                            <div class="content__content-item-right-status">
-                                <div class="content__content-item-right-status-icon status-icon--in-progress"></div>
-                                <div class="content__content-item-right-status-name">In Progress</div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="content__pagination">
-                        <div class="content__pagination-total">
-                            <div class="content__pagination-total-value">1-4</div> of
-                            <div class="content__pagination-total-value">4</div>
-                            <!-- <b>1-4</b> of <b>4</b> -->
-                        </div>
-                        <div class="content__pagination-number">
-                            <img class="content__pagination-number-prev icon__medium active" src="./img/prv.svg" alt="">
-                            <div class="content__pagination-number-item">1</div>
-                            <div class="content__pagination-number-item content__pagination-number--active">3</div>
-                            <div class="content__pagination-number-item">4</div>
-                            <img class="content__pagination-number-next icon__medium active" src="./img/next.svg" alt="">
-                        </div>
-                    </div>
+                        <div class="clearfix"></div>
+                    </div> -->
                     
                 </div>
                 
@@ -263,7 +391,7 @@
         </div>
         <!-- <div class="footer"></div> -->
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/main2.js"></script>
 </body>
 </html>

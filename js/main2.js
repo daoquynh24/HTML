@@ -16,14 +16,11 @@
 
 $('.show-mobile.sidebar-icon').click(function (e) { 
     e.preventDefault();
-    // $('.sidebar').css('display','block');
     $('.sidebar').addClass('show');
-    $('.overlay').addClass('show');
-    
+    $('.overlay').addClass('show');    
 });
 $('.overlay').click(function (e) { 
     e.preventDefault();
-    // $('.sidebar').css('display','block');
     $('.sidebar').removeClass('show');
     $('.overlay').removeClass('show');
     
@@ -42,39 +39,47 @@ function sidebar() {
     if (w < 740) {
         if (ok) {
             $('.sidebar-icon').addClass('expand');
-            $('.sidebar').css('width','24rem');
+            $('.sidebar').removeClass('sidebar-width-zero');
+            $('.sidebar').removeClass('sidebar-width-small');
         }
         else{
             $('.sidebar-icon').removeClass('expand');
-            $('.sidebar').css('width','0');
-            $('.view').css('width','100%'); 
+            $('.sidebar').removeClass('sidebar-width-small');
+            $('.view').removeClass('view-width-small');
+            $('.sidebar').addClass('sidebar-width-zero');
+            $('.view').addClass('sidebar-width-full');
         }
     }    
     else{
-        $('.sidebar').css('width','24rem');
-        $('.view').css('width','calc(100% - var(--sidebar-width))');
+        $('.sidebar').removeClass('sidebar-width-zero');
+        $('.view').removeClass('sidebar-width-full');
 
         if (ok2) {
             $(this).removeClass('expand');
-            $('.sidebar').css('width','10rem');
-            $('.view').css('width','calc(100% - 10rem)'); 
-            $('.sidebar-content .item').css('padding','1.2rem 4rem');
-            $('.sidebar-content .head').css('padding','1.2rem 4rem');
-    
+            $('.sidebar').addClass('sidebar-width-small');
+            $('.view').addClass('view-width-small'); 
+            $('.sidebar-content .item').addClass('padd-big');
+            $('.sidebar-content .head').addClass('padd-big');
+
             $('.logo-title').addClass('hide');
-            $('.sidebar-content .head .title').addClass('hide');
-            $('.sidebar-content .item .title').addClass('hide'); 
+            $('.sidebar-content .title').addClass('hide');
+            // $('.sidebar-content .item .title').addClass('hide'); 
+            $('.icon-mobile').addClass('show');
+            $('.icon-down').addClass('hide'); 
+            $('.sidebar-content .head img').addClass('img-project');
             
         }else{
             $(this).addClass('expand');
-            $('.sidebar').css('width','24rem');
-            $('.view').css('width','calc(100% - var(--sidebar-width))'); 
-            $('.sidebar-content .item').css('padding','1.2rem 1.5rem');
-            $('.sidebar-content .head').css('padding','1.2rem 1.5rem');
+            $('.sidebar').removeClass('sidebar-width-small');
+            $('.view').removeClass('view-width-small');             
+            $('.sidebar-content .item').removeClass('padd-big');
+            $('.sidebar-content .head').removeClass('padd-big');
             $('.logo-title').removeClass('hide');
-            $('.sidebar-content .head .title').removeClass('hide');
-            $('.sidebar-content .item .title').removeClass('hide');
-            
+            $('.sidebar-content .title').removeClass('hide');
+            $('.icon-mobile').removeClass('show');
+            // $('.sidebar-content .item .title').removeClass('hide');
+            $('.icon-down').removeClass('hide'); 
+            $('.sidebar-content .head img').removeClass('img-project');            
         }
     }
 }
@@ -90,10 +95,10 @@ $('.sidebar-icon').click(function (e) {
 
     if(ok){
         $(this).removeClass('expand');
-        $('.sidebar').css('width','10rem');
-        $('.view').css('width','calc(100% - 10rem)');
-        $('.sidebar-content .item').css('padding','1.2rem 4rem');
-        $('.sidebar-content .head').css('padding','1.2rem 4rem');
+        $('.sidebar').addClass('sidebar-width-small');
+        $('.view').addClass('view-width-small'); 
+        $('.sidebar-content .item').addClass('padd-big');
+        $('.sidebar-content .head').addClass('padd-big');
 
         $('.logo-title').addClass('hide');
         $('.sidebar-content .head .title').addClass('hide');
@@ -105,12 +110,9 @@ $('.sidebar-icon').click(function (e) {
         }             
     }else{
         $(this).addClass('expand');
-            
-        $('.sidebar').css('width','24rem');
-        // $('.view').css('width','calc(100% - var(-sidebar-width))');            
-
-        $('.sidebar-content .item').css('padding','1.2rem 1.5rem');
-        $('.sidebar-content .head').css('padding','1.2rem 1.5rem');
+        $('.sidebar').removeClass('sidebar-width-zero');
+        $('.sidebar-content .item').removeClass('padd-big');
+        $('.sidebar-content .head').removeClass('padd-big');
         $('.logo-title').removeClass('hide');
         $('.sidebar-content .head .title').removeClass('hide');
         $('.sidebar-content .item .title').removeClass('hide');   
@@ -118,10 +120,34 @@ $('.sidebar-icon').click(function (e) {
             setInterval(function(){ 
                 sidebar();
             }, 10);
-        }else{
-            $('.sidebar').css('width','24rem');
-            $('.view').css('width','calc(100% - var(--sidebar-width))'); 
-        }    
+        }
+        // else{
+        //     $('.sidebar').removeClass('sidebar-width-zero');
+        //     $('.view').removeClass('sidebar-width-full');
+        //     $('.sidebar').removeClass('sidebar-width-small');
+        //     $('.view').removeClass('view-width-small'); 
+        // }    
     }
 });
 
+$(".sidebar-menu a").click(function(e){
+    var parent=$(this).parent();
+    if(parent.find(">ul").length){
+        e.preventDefault();
+        parent.siblings().removeClass("open");
+        if(parent.hasClass("open")){
+            parent.removeClass("open");  
+            $(this).find('.icon-down').removeClass('active');
+            parent.find('>ul').removeClass('active');
+        }else{
+            parent.addClass("open");    
+            $(this).find('.icon-down').addClass('active');
+            parent.find('>ul').addClass('active');
+            
+        }
+    }else{
+        $(".sidebar-menu li").removeClass("active");
+        parent.addClass("active");
+    }    
+
+});
