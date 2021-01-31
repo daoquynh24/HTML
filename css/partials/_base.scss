@@ -6,7 +6,7 @@
 html{
     font-size: 62.5%; /* Tương ứng 12px . 1rem = 10px*/
     line-height: 1.6rem;
-    font-family: 'SFProDisplay','Roboto', sans-serif;
+    font-family: 'SFPro','Roboto', sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -28,7 +28,7 @@ body{
 .icon__regular{
     width: 1.2rem;
     height: 1.2rem;
-    margin: 0.5rem;
+    margin: 0 0.5rem;
 }
 a{
     text-decoration: none;
@@ -74,7 +74,7 @@ img.active:hover{
     vertical-align: middle;
 }
 .text--blue{
-    color: $blue-color;
+    color: $btn-color;
 }
 .text--green{
     color: $green-color;
@@ -100,3 +100,10 @@ tbody tr:last-child td{
     border-bottom: none;
 }
 
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}

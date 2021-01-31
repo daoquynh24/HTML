@@ -118,7 +118,7 @@ html {
   font-size: 62.5%;
   /* Tương ứng 12px . 1rem = 10px*/
   line-height: 1.6rem;
-  font-family: 'SFProDisplay','Roboto', sans-serif;
+  font-family: 'SFPro','Roboto', sans-serif;
   box-sizing: border-box; }
 
 body {
@@ -140,7 +140,7 @@ body {
 .icon__regular {
   width: 1.2rem;
   height: 1.2rem;
-  margin: 0.5rem; }
+  margin: 0 0.5rem; }
 
 a {
   text-decoration: none; }
@@ -184,7 +184,7 @@ img.active:hover {
   vertical-align: middle; }
 
 .text--blue {
-  color: #153673; }
+  color: #1660C0; }
 
 .text--green {
   color: #1EA85A; }
@@ -206,6 +206,12 @@ th, td {
 
 tbody tr:last-child td {
   border-bottom: none; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
 
 body {
   background-color: #e6e6e644;
@@ -523,7 +529,7 @@ body {
           .wrapper .view .header .header-right .item.btn-primary {
             background-color: #1660C0;
             color: #fff;
-            padding: 1.2rem;
+            padding: 0 1.5rem;
             border-radius: 0.4rem;
             font-size: 1.6rem;
             height: 4rem;
@@ -629,6 +635,8 @@ body {
         cursor: default; }
         .wrapper .view .check-list .info.info-big {
           padding-left: 3.5rem; }
+        .wrapper .view .check-list .info .check-title {
+          font-weight: bold; }
         .wrapper .view .check-list .info .info-tag {
           font-size: 1.2rem;
           color: #8D8D8E;
@@ -768,7 +776,8 @@ body {
             font-size: 1.1rem;
             color: #8D8D8E; }
           .wrapper .view .content .head .info-item .detail-info {
-            font-size: 1.2rem; }
+            font-size: 1.2rem;
+            font-weight: bold; }
           .wrapper .view .content .head .info-item .text-change {
             color: #ff0505; }
         .wrapper .view .content .head .head-percent {
@@ -1095,7 +1104,8 @@ body {
               cursor: move; }
       .wrapper .view .content .content__dashboard .head-title {
         font-size: 1.6rem;
-        display: inline-block; }
+        display: inline-block;
+        font-weight: bold; }
         .wrapper .view .content .content__dashboard .head-title img {
           width: 0.6rem;
           margin-right: 1rem; }
@@ -1106,7 +1116,7 @@ body {
           float: right; }
       .wrapper .view .content .content__dashboard .table1 th, .wrapper .view .content .content__dashboard .table1 td {
         text-align: center;
-        padding: 1.9rem 0; }
+        padding: 1.4rem 0; }
       .wrapper .view .content .content__dashboard .table1 .user {
         text-align: start; }
       .wrapper .view .content .content__dashboard .table1 .col-use {
@@ -1121,7 +1131,7 @@ body {
             padding-right: 2rem;
             padding-left: 1rem; }
             .wrapper .view .content .content__dashboard .table1 .col-use .table__group .group-img img {
-              width: 3rem; }
+              width: 2.5rem; }
             .wrapper .view .content .content__dashboard .table1 .col-use .table__group .group-img img:first-child {
               margin-left: 0; }
           .wrapper .view .content .content__dashboard .table1 .col-use .table__group .group-name {
@@ -1129,7 +1139,7 @@ body {
             display: inline-block;
             position: absolute;
             top: 50%;
-            left: 120px;
+            left: 110px;
             transform: translate(0, -50%);
             white-space: break-spaces; }
       .wrapper .view .content .content__dashboard .table1 .col-item1 {
@@ -1228,10 +1238,10 @@ body {
             transform: translate(-85%, -50%); }
           .wrapper .view .content .content__dashboard .content__cart .head-body .title {
             color: #8D8D8E;
-            margin-bottom: 0.5rem; }
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem; }
           .wrapper .view .content .content__dashboard .content__cart .head-body .numb {
-            font-weight: bold;
-            font-size: 1.6rem; }
+            font-size: 2rem; }
           .wrapper .view .content .content__dashboard .content__cart .head-body .overdue {
             color: #ff0505;
             background-color: #FFF7F7; }
@@ -1255,7 +1265,8 @@ body {
         .wrapper .view .content .content__dashboard .content__cart .cart-bottom {
           margin: 2rem 0 0;
           display: block;
-          position: relative; }
+          position: relative;
+          padding: 0 1rem; }
           .wrapper .view .content .content__dashboard .content__cart .cart-bottom .item {
             text-align: center;
             display: inline-block; }
