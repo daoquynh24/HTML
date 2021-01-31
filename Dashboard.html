@@ -43,7 +43,7 @@
                         <a href="#" class="item">
                             <img class="icon__medium img1" src="./img/task.svg" alt="">
                             <div class="title">Tasks</div>
-                            <img class="icon__small icon-down" src="./img/down1.svg" alt="">
+                            <img class="icon__small icon-down hover" src="./img/down1.svg" alt="">
                         </a>
                         <ul>
                             <li><a href="#"><span class="icon-mobile"></span><div class="title">Task 1</div></a></li>
@@ -101,18 +101,16 @@
         <div class="view">
             <div class="header">
                 <div class="search">
-                    <button class="show-mobile sidebar-icon">
+                    <button class="sidebar-icon show-mobile ">
                         <img class="sidebar-icon2 active" src="./img/sidebar2.svg" alt="">
                     </button>
                     <div class="search-input">
                         <input type="text" placeholder="Search task, project">
                     </div>
                     <button class="icon-search none-border"><img src="./img/search.svg" alt=""></button>
-                    <!-- <div class="header__search-button">
-                    </div> -->
                 </div>
                 <div class="header-right">
-                    <button class="item btn btn-primary">
+                    <button class="item btn-add btn btn-primary">
                         <img class="icon__medium" src="./img/plus_add.svg" alt=""> 
                         New                        
                     </button>
@@ -124,372 +122,368 @@
             </div>
             <div class="content">   
                 <div class="content__dashboard">
-                    <div class="grid wide">
-                        <div class="row sm-gutter">
-                            <div class="col l-3 m-6 c-12">
-                                <div class="content__cart">
-                                    <div class="cart-head">
-                                        <div class="head-title">
-                                            <img class="icon__small" src="./img/more2.png" alt="">
-                                            Task Status
-                                        </div>
-                                        <img class="icon__regular active" src="./img/more.svg" alt="">
+                    <div class="row sm-gutter">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="content__cart">
+                                <div class="cart-head">
+                                    <div class="head-title">
+                                        <img class="icon__small" src="./img/more2.png" alt="">
+                                        Task Status
                                     </div>
-                                    <div class="head-body cart-item1">
-                                        <!-- <canvas id="myChart1"></canvas> -->
-                                        <div id="myChart1"></div>
-                                        <div class="chart-info">
-                                            <div class="title">Total</div>
-                                            <div class="numb">120</div>
-                                        </div>
+                                    <img class="icon__regular active" src="./img/more.svg" alt="">
+                                </div>
+                                <div class="head-body cart-item1">
+                                    <!-- <canvas id="myChart1"></canvas> -->
+                                    <div id="myChart1"></div>
+                                    <div class="chart-info">
+                                        <div class="title">Total</div>
+                                        <div class="numb">120</div>
                                     </div>
-                                    <div class="cart-bottom">
-                                        <div class="item">
-                                            <div class="item-title">New</div>
-                                            <div class="item-value text--blue">40</div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="item-title">Inprogress</div>
-                                            <div class="item-value text--yellow">35</div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="item-title">Complete</div>
-                                            <div class="item-value text--green">45</div>
-                                        </div>
+                                </div>
+                                <div class="cart-bottom">
+                                    <div class="item">
+                                        <div class="item-title">New</div>
+                                        <div class="item-value text--blue">40</div>
+                                    </div>
+                                    <div class="item item-center">
+                                        <div class="item-title">Inprogress</div>
+                                        <div class="item-value text--yellow">35</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-title">Complete</div>
+                                        <div class="item-value text--green">45</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-3 m-6 c-12">
-                                <div class="content__cart">
-                                    <div class="cart-head">
-                                        <div class="head-title">
-                                            <img class="icon__small" src="./img/more2.png" alt="">
-                                            Project Progress
-                                        </div>
-                                        <img class="icon__regular active" src="./img/more.svg" alt="">
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="content__cart">
+                                <div class="cart-head">
+                                    <div class="head-title">
+                                        <img class="icon__small" src="./img/more2.png" alt="">
+                                        Project Progress
                                     </div>
-                                    <div class="head-body cart-item2">
-                                        <div id="myChart2"></div>
-                                        <div class="chart-info">
-                                            <div class="numb">30%</div>
-                                        </div>
+                                    <img class="icon__regular active" src="./img/more.svg" alt="">
+                                </div>
+                                <div class="head-body cart-item2">
+                                    <div id="myChart2"></div>
+                                    <div class="chart-info">
+                                        <div class="numb">30%</div>
                                     </div>
-                                    <div class="cart-bottom cart-bottom2">
-                                        <div class="item">
-                                            <div class="item-title">Total</div>
-                                            <div class="item-value">40</div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="item-title">Complete</div>
-                                            <div class="item-value text--green">45</div>
-                                        </div>
+                                </div>
+                                <div class="cart-bottom cart-bottom2 ">
+                                    <div class="item">
+                                        <div class="item-title">Total</div>
+                                        <div class="item-value">40</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-title">Complete</div>
+                                        <div class="item-value text--green">45</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-6 m-12 c-12">
-                                <div class="content__cart cart-item3">
-                                    <div class="cart-head">
-                                        <div class="head-title">
-                                            <img class="icon__small" src="./img/more2.png" alt="">
-                                            Team Status
-                                        </div>
-                                        <img class="icon__regular active" src="./img/more.svg" alt="">
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="content__cart cart-item3">
+                                <div class="cart-head">
+                                    <div class="head-title">
+                                        <img class="icon__small" src="./img/more2.png" alt="">
+                                        Team Status
                                     </div>
-                                    <div class="head-body cart-item3-body">
-                                        <table class="table table1">
-                                            <thead>
-                                              <tr>
-                                                <th class="user">Users</th>
-                                                <th>Overdue</th>
-                                                <th>Today's</th>
-                                                <th>All open</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td width="49%">
-                                                        <div class="table__group">
-                                                            <div class="group-img">
-                                                                <img class="icon__medium" src="./img/user1.png" alt="">
-                                                                <img class="icon__medium" src="./img/user2.png" alt="">
-                                                                <img class="icon__medium" src="./img/user3.png" alt="">
-                                                                <img class="icon__medium" src="./img/user_number.png" alt="">
-                                                            </div>
-                                                            <div class="group-name">UX Designers</div>
+                                    <img class="icon__regular active" src="./img/more.svg" alt="">
+                                </div>
+                                <div class="head-body cart-item3-body">
+                                    <table class="table table1">
+                                        <thead>
+                                            <tr>
+                                            <th class="user">Users</th>
+                                            <th>Overdue</th>
+                                            <th>Today's</th>
+                                            <th>All open</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-use">
+                                                    <div class="table__group">
+                                                        <div class="group-img">
+                                                            <img class="icon__medium" src="./img/user1.png" alt="">
+                                                            <img class="icon__medium" src="./img/user2.png" alt="">
+                                                            <img class="icon__medium" src="./img/user3.png" alt="">
+                                                            <img class="icon__medium" src="./img/user_number.png" alt="">
                                                         </div>
-                                                    </td>
-                                                    <td class="overdue" width="17%">10</td>
-                                                    <td width="17%">0</td>
-                                                    <td width="17%">120</td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="49%">
-                                                        <div class="table__group">
-                                                            <div class="group-img">
-                                                                <img class="icon__medium" src="./img/user1.png" alt="">
-                                                                <img class="icon__medium" src="./img/user2.png" alt="">
-                                                                <img class="icon__medium" src="./img/user3.png" alt="">
-                                                                <img class="icon__medium" src="./img/user_number.png" alt="">
-                                                            </div>
-                                                            <div class="group-name">UX Designers</div>
+                                                        <div class="group-name">UX Designers</div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item1 overdue">10</td>
+                                                <td class="col-item1">0</td>
+                                                <td class="col-item1">120</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-use">
+                                                    <div class="table__group">
+                                                        <div class="group-img">
+                                                            <img class="icon__medium" src="./img/user1.png" alt="">
+                                                            <img class="icon__medium" src="./img/user2.png" alt="">
+                                                            <img class="icon__medium" src="./img/user3.png" alt="">
+                                                            <img class="icon__medium" src="./img/user_number.png" alt="">
                                                         </div>
-                                                    </td>
-                                                    <td class="overdue" width="17%">10</td>
-                                                    <td width="17%">0</td>
-                                                    <td width="17%">120</td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="49%">
-                                                        <div class="table__group">
-                                                            <div class="group-img">
-                                                                <img class="icon__medium" src="./img/user1.png" alt="">
-                                                                <img class="icon__medium" src="./img/user2.png" alt="">
-                                                                <img class="icon__medium" src="./img/user3.png" alt="">
-                                                                <img class="icon__medium" src="./img/user_number.png" alt="">
-                                                            </div>
-                                                            <div class="group-name">UX Designers</div>
+                                                        <div class="group-name">UX Designers</div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item1 overdue">10</td>
+                                                <td class="col-item1">0</td>
+                                                <td class="col-item1">120</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-use">
+                                                    <div class="table__group">
+                                                        <div class="group-img">
+                                                            <img class="icon__medium" src="./img/user1.png" alt="">
+                                                            <img class="icon__medium" src="./img/user2.png" alt="">
+                                                            <img class="icon__medium" src="./img/user3.png" alt="">
+                                                            <img class="icon__medium" src="./img/user_number.png" alt="">
                                                         </div>
-                                                    </td>
-                                                    <td class="overdue" width="17%">10</td>
-                                                    <td width="17%">0</td>
-                                                    <td width="17%">120</td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="49%">
-                                                        <div class="table__group">
-                                                            <div class="group-img">
-                                                                <img class="icon__medium" src="./img/user1.png" alt="">
-                                                                <img class="icon__medium" src="./img/user2.png" alt="">
-                                                                <img class="icon__medium" src="./img/user3.png" alt="">
-                                                                <img class="icon__medium" src="./img/user_number.png" alt="">
-                                                            </div>
-                                                            <div class="group-name">Frontend Developers</div>
+                                                        <div class="group-name">UX Designers</div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item1 overdue">10</td>
+                                                <td class="col-item1">0</td>
+                                                <td class="col-item1">120</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-use">
+                                                    <div class="table__group">
+                                                        <div class="group-img">
+                                                            <img class="icon__medium" src="./img/user1.png" alt="">
+                                                            <img class="icon__medium" src="./img/user2.png" alt="">
+                                                            <img class="icon__medium" src="./img/user3.png" alt="">
+                                                            <img class="icon__medium" src="./img/user_number.png" alt="">
                                                         </div>
-                                                    </td>
-                                                    <td class="overdue" width="17%">10</td>
-                                                    <td width="17%">0</td>
-                                                    <td width="17%">120</td>
-                                                </tr>
-                                              
-                                            </tbody>
-                                          </table>
-                                    </div>
+                                                        <div class="group-name">Frontend Developers</div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item1 overdue">10</td>
+                                                <td class="col-item1">0</td>
+                                                <td class="col-item1">120</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                        </table>
                                 </div>
                             </div>
-                            <div class="col l-6 m-12 c-12">
-                                <div class="content__cart2">
-                                    <div class="cart-head">
-                                        <div class="head-title">
-                                            <img class="icon__small" src="./img/more2.png" alt="">
-                                            Task Status
-                                        </div>
-                                        <img class="icon__regular active" src="./img/more.svg" alt="">
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="content__cart2">
+                                <div class="cart-head">
+                                    <div class="head-title">
+                                        <img class="icon__small" src="./img/more2.png" alt="">
+                                        Task Status
                                     </div>
-                                    <div class="head-body">
-                                        <figure class="highcharts-figure">
-                                            <div id="myChart3"></div>                                        
-                                        </figure>
+                                    <img class="icon__regular active" src="./img/more.svg" alt="">
+                                </div>
+                                <div class="head-body">
+                                    <figure class="highcharts-figure">
+                                        <div id="myChart3"></div>                                        
+                                    </figure>
+                                </div>
+                                <!-- <div id="myChart3" style="min-width: 310px; height: 400px; margin: 0 auto"></div> -->
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="col l-6 m-12 c-12">
+                            <div class="content__cart2">
+                                <div class="cart-head">
+                                    <div class="head-title">
+                                        <img class="icon__small" src="./img/more2.png" alt="">
+                                        Task Status
                                     </div>
-                                    <!-- <div id="myChart3" style="min-width: 310px; height: 400px; margin: 0 auto"></div> -->
+                                    <img class="icon__regular active" src="./img/more.svg" alt="">
+                                </div>
+                                <div class="head-body">
+                                    <table class="table table2">
+                                        <thead>
+                                            <tr>
+                                            <th>Name</th>
+                                            <th>Due date</th>
+                                            <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-name">
+                                                    <div class="table__group">
+                                                        <div class="group-percent">
+                                                            <div class="percent-number">50%</div>
+                                                        </div>
+                                                        <div class="group-name">
+                                                            <div class="name-title">New Product Lanch</div>
+                                                            <div class="name-info">
+                                                                <img class="icon__small" src="./img/tag.svg" alt="">
+                                                                eHealth 4.1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="table__date">
+                                                        <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                                        <div class="date-value"> 23/05/2019</div>
+                                                    </div> 
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="status">
+                                                        <div class="status-icon in-progress"></div>
+                                                        <div class="status-name">In Progress</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-name">
+                                                    <div class="table__group">
+                                                        <div class="group-percent percent-full">
+                                                            <div class="percent-number">100%</div>
+                                                        </div>
+                                                        <div class="group-name">
+                                                            <div class="name-title">New Product Lanch</div>
+                                                            <div class="name-info">
+                                                                <img class="icon__small" src="./img/tag.svg" alt="">
+                                                                eHealth 4.1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="table__date">
+                                                        <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                                        <div class="date-value"> 23/05/2019</div>
+                                                    </div> 
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="status">
+                                                        <div class="status-icon complete"></div>
+                                                        <div class="status-name">Complete</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-name">
+                                                    <div class="table__group">
+                                                        <div class="group-percent percent-zero">
+                                                            <div class="percent-number">50%</div>
+                                                        </div>
+                                                        <div class="group-name">
+                                                            <div class="name-title">New Product Lanch</div>
+                                                            <div class="name-info">
+                                                                <img class="icon__small" src="./img/tag.svg" alt="">
+                                                                eHealth 4.1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="table__date">
+                                                        <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                                        <div class="date-value"> 23/05/2019</div>
+                                                    </div> 
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="status">
+                                                        <div class="status-icon new"></div>
+                                                        <div class="status-name">New</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-name">
+                                                    <div class="table__group">
+                                                        <div class="group-percent percent-full">
+                                                            <div class="percent-number">100%</div>
+                                                        </div>
+                                                        <div class="group-name">
+                                                            <div class="name-title">New Product Lanch</div>
+                                                            <div class="name-info">
+                                                                <img class="icon__small" src="./img/tag.svg" alt="">
+                                                                eHealth 4.1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="table__date">
+                                                        <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                                        <div class="date-value"> 23/05/2019</div>
+                                                    </div> 
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="status">
+                                                        <div class="status-icon complete"></div>
+                                                        <div class="status-name">Complete</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-name">
+                                                    <div class="table__group">
+                                                        <div class="group-percent percent-full">
+                                                            <div class="percent-number">100%</div>
+                                                        </div>
+                                                        <div class="group-name">
+                                                            <div class="name-title">New Product Lanch</div>
+                                                            <div class="name-info">
+                                                                <img class="icon__small" src="./img/tag.svg" alt="">
+                                                                eHealth 4.1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="table__date">
+                                                        <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                                        <div class="date-value"> 23/05/2019</div>
+                                                    </div> 
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="status">
+                                                        <div class="status-icon complete"></div>
+                                                        <div class="status-name">Complete</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-name">
+                                                    <div class="table__group">
+                                                        <div class="group-percent percent-full">
+                                                            <div class="percent-number">100%</div>
+                                                        </div>
+                                                        <div class="group-name">
+                                                            <div class="name-title">New Product Lanch</div>
+                                                            <div class="name-info">
+                                                                <img class="icon__small" src="./img/tag.svg" alt="">
+                                                                eHealth 4.1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="table__date">
+                                                        <img class="icon__medium date-img" src="./img/date.svg" alt="">
+                                                        <div class="date-value"> 23/05/2019</div>
+                                                    </div> 
+                                                </td>
+                                                <td class="col-item2">
+                                                    <div class="status">
+                                                        <div class="status-icon complete"></div>
+                                                        <div class="status-name">Complete</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
                                 </div>
                             </div>
-                            <!-- 5 -->
-                            <div class="col l-6 m-12 c-12">
-                                <div class="content__cart2">
-                                    <div class="cart-head">
-                                        <div class="head-title">
-                                            <img class="icon__small" src="./img/more2.png" alt="">
-                                            Task Status
-                                        </div>
-                                        <img class="icon__regular active" src="./img/more.svg" alt="">
-                                    </div>
-                                    <div class="head-body">
-                                        <table class="table table2">
-                                            <thead>
-                                              <tr>
-                                                <th>Name</th>
-                                                <th>Due date</th>
-                                                <th>Status</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td width="60%">
-                                                        <div class="table__group">
-                                                            <div class="group-percent">
-                                                                <div class="percent-number">50%</div>
-                                                            </div>
-                                                            <div class="group-name">
-                                                                <div class="name-title">New Product Lanch</div>
-                                                                <div class="name-info">
-                                                                    <img class="icon__small" src="./img/tag.svg" alt="">
-                                                                    eHealth 4.1
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="table__date">
-                                                            <img class="icon__medium date-img" src="./img/date.svg" alt="">
-                                                            <div class="date-value"> 23/05/2019</div>
-                                                        </div> 
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="status">
-                                                            <div class="status-icon in-progress"></div>
-                                                            <div class="status-name">In Progress</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="60%">
-                                                        <div class="table__group">
-                                                            <div class="group-percent percent-full">
-                                                                <div class="percent-number">100%</div>
-                                                            </div>
-                                                            <div class="group-name">
-                                                                <div class="name-title">New Product Lanch</div>
-                                                                <div class="name-info">
-                                                                    <img class="icon__small" src="./img/tag.svg" alt="">
-                                                                    eHealth 4.1
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="table__date">
-                                                            <img class="icon__medium date-img" src="./img/date.svg" alt="">
-                                                            <div class="date-value"> 23/05/2019</div>
-                                                        </div> 
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="status">
-                                                            <div class="status-icon complete"></div>
-                                                            <div class="status-name">Complete</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="60%">
-                                                        <div class="table__group">
-                                                            <div class="group-percent percent-zero">
-                                                                <div class="percent-number">50%</div>
-                                                            </div>
-                                                            <div class="group-name">
-                                                                <div class="name-title">New Product Lanch</div>
-                                                                <div class="name-info">
-                                                                    <img class="icon__small" src="./img/tag.svg" alt="">
-                                                                    eHealth 4.1
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="table__date">
-                                                            <img class="icon__medium date-img" src="./img/date.svg" alt="">
-                                                            <div class="date-value"> 23/05/2019</div>
-                                                        </div> 
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="status">
-                                                            <div class="status-icon new"></div>
-                                                            <div class="status-name">New</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="60%">
-                                                        <div class="table__group">
-                                                            <div class="group-percent percent-full">
-                                                                <div class="percent-number">100%</div>
-                                                            </div>
-                                                            <div class="group-name">
-                                                                <div class="name-title">New Product Lanch</div>
-                                                                <div class="name-info">
-                                                                    <img class="icon__small" src="./img/tag.svg" alt="">
-                                                                    eHealth 4.1
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="table__date">
-                                                            <img class="icon__medium date-img" src="./img/date.svg" alt="">
-                                                            <div class="date-value"> 23/05/2019</div>
-                                                        </div> 
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="status">
-                                                            <div class="status-icon complete"></div>
-                                                            <div class="status-name">Complete</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="60%">
-                                                        <div class="table__group">
-                                                            <div class="group-percent percent-full">
-                                                                <div class="percent-number">100%</div>
-                                                            </div>
-                                                            <div class="group-name">
-                                                                <div class="name-title">New Product Lanch</div>
-                                                                <div class="name-info">
-                                                                    <img class="icon__small" src="./img/tag.svg" alt="">
-                                                                    eHealth 4.1
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="table__date">
-                                                            <img class="icon__medium date-img" src="./img/date.svg" alt="">
-                                                            <div class="date-value"> 23/05/2019</div>
-                                                        </div> 
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="status">
-                                                            <div class="status-icon complete"></div>
-                                                            <div class="status-name">Complete</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="60%">
-                                                        <div class="table__group">
-                                                            <div class="group-percent percent-full">
-                                                                <div class="percent-number">100%</div>
-                                                            </div>
-                                                            <div class="group-name">
-                                                                <div class="name-title">New Product Lanch</div>
-                                                                <div class="name-info">
-                                                                    <img class="icon__small" src="./img/tag.svg" alt="">
-                                                                    eHealth 4.1
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="table__date">
-                                                            <img class="icon__medium date-img" src="./img/date.svg" alt="">
-                                                            <div class="date-value"> 23/05/2019</div>
-                                                        </div> 
-                                                    </td>
-                                                    <td width="20%">
-                                                        <div class="status">
-                                                            <div class="status-icon complete"></div>
-                                                            <div class="status-name">Complete</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                
-                                              
-                                            </tbody>
-                                          </table>
-                                    </div>
-                                </div>
-                            </div>    
                         </div>    
-                    </div>        
+                    </div>    
                 </div>
             </div>
         </div>

@@ -151,3 +151,23 @@ $(".sidebar-menu a").click(function(e){
     }    
 
 });
+
+$('.icon-search').click(function (e) { 
+    // e.preventDefault();
+    var parent=$(this).parent();
+    var ok = parent.find('.search-input input').hasClass('show');
+    var w = $(window).width();
+
+    if (w < 740) {
+        if (!ok) {
+            parent.find('.search-input').addClass('show');
+            parent.find('.search-input input').addClass('show');
+            $('.header').addClass('show-input');
+        }else{
+            parent.find('.search-input').removeClass('show');
+            parent.find('.search-input input').removeClass('show');
+            $('.header').removeClass('show-input');
+        }
+        
+    }  
+});
