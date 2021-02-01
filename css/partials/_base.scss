@@ -6,7 +6,7 @@
 html{
     font-size: 62.5%; /* Tương ứng 12px . 1rem = 10px*/
     line-height: 1.6rem;
-    font-family: 'SFPro','Roboto', sans-serif;
+    font-family: SFPro, Roboto, 'sans-serif';
     box-sizing: border-box;
 }
 body{
@@ -19,13 +19,13 @@ body{
 .hide{
     display: none;
 }
-.icon__medium{
+.icon-medium{
     width: 1.6rem;
 }
-.icon__small{
+.icon-small{
     width: 1rem;    
 }
-.icon__regular{
+.icon-regular{
     width: 1.2rem;
     height: 1.2rem;
     margin: 0 0.5rem;
@@ -56,7 +56,7 @@ img.active:hover{
     outline: none;
 }
 
-.btn__primary{
+.btn-primary{
     background-color: $btn-color;
     color: $white-color;
     padding: 1.2rem;
@@ -66,7 +66,7 @@ img.active:hover{
     vertical-align: middle;
     box-shadow: 0 1px 2px #ccc;
 }
-.btn__default-small{
+.btn-default-small{
     background-color: $white-color;
     color: $text-gray-color;
     border-radius: 0.2rem;

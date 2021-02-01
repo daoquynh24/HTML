@@ -1,19 +1,3 @@
-
-// $('#circle_check').val(this.checked);
-
-// $('#circle_check').change(function() {
-//     var parent=$(this).parent();
-//     if(this.checked) {
-//         parent.addClass('content__content-item-left--checked'); 
-//         parent.find('img.icon_check').addClass('icon_check--active'); 
-//         // $(this).prop("checked");        
-//     }else{
-//         parent.removeClass('content__content-item-left--checked');    
-//         $(this).prop("checked");
-//     }
-//     $('#circle_check').val(this.checked);        
-// });
-
 $('.show-mobile.sidebar-icon').click(function (e) { 
     e.preventDefault();
     $('.sidebar').addClass('show');
@@ -171,3 +155,12 @@ $('.icon-search').click(function (e) {
         
     }  
 });
+
+function changeInput() {
+    var value = $('#myInput').val();
+    if (value) {
+        $('.check-other').prop('checked', true);        
+    } else {
+        $('.check-other').prop('checked', false);      
+    }
+}

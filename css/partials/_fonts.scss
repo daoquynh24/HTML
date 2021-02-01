@@ -1,47 +1,36 @@
+
 /* Fonts */
 
-@font-face {
-    font-family: 'SFPro';
-    src:url('/fonts/SF-Pro-Display-Bold.otf') format('opentype'), 
-        url('/fonts/SFProDisplay-Bold.ttf') format('truetype');
-    font-weight: bold;
-}
 
 @font-face {
-    font-family: 'SFPro';
-    src:url('/fonts/SF-Pro-Display-Light.otf') format('opentype'), 
-        url('/fonts/SFProDisplay-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-family:"SFPro";
+    src: url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
 }
 @font-face {
-    font-family: 'SFPro';
-    src:url('/fonts/SF-Pro-Display-Regular.otf') format('opentype'), 
-        url('/fonts/SFProDisplay-Regular.ttf') format('truetype');
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'SFPro';
-    src:url('/fonts/SF-Pro-Display-Medium.otf') format('opentype'), 
-        url('/fonts/SFProDisplay-Medium.ttf') format('truetype');
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'SFPro';
-    src:url('/fonts/SF-Pro-Display-Thin.otf') format('opentype'), 
-        url('/fonts/SFProDisplay-Thin.ttf') format('truetype');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src:url('/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), 
-        url('/fonts/Roboto-Bold.woff') format('woff'), 
-        url('/fonts/Roboto-Bold.ttf') format('truetype'), 
-        url('/fonts/Roboto-Bold.svg#SFUFutura') format('svg');
-    font-weight: bold;
+    font-family:"SFPro";
+    src: url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight:300;
+    font-style:normal;
 }
 
 
+
+@font-face {
+    font-family:"SFPro";
+    src: url('../fonts/SFProDisplay-Thin.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+@font-face {
+    font-family:"SFPro";
+    src:url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
 @font-face {
     font-family: 'Roboto';
     src:url('/fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), 
@@ -50,8 +39,14 @@
         url('/fonts/Roboto-Light.svg#SFUFutura') format('svg');
     font-weight: 300;
 }
-
-
+@font-face {
+    font-family: 'Roboto';
+    src:url('/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), 
+        url('/fonts/Roboto-Bold.woff') format('woff'), 
+        url('/fonts/Roboto-Bold.ttf') format('truetype'), 
+        url('/fonts/Roboto-Bold.svg#SFUFutura') format('svg');
+    font-weight: bold;
+}
 @font-face {
     font-family: 'Roboto';
     src:url('/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), 
