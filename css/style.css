@@ -1131,7 +1131,7 @@ body {
             padding-right: 2rem;
             padding-left: 1rem; }
             .wrapper .view .content .content__dashboard .table1 .col-use .table__group .group-img img {
-              width: 2.5rem; }
+              width: 2.75rem; }
             .wrapper .view .content .content__dashboard .table1 .col-use .table__group .group-img img:first-child {
               margin-left: 0; }
           .wrapper .view .content .content__dashboard .table1 .col-use .table__group .group-name {
@@ -1235,7 +1235,7 @@ body {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-85%, -50%); }
+            transform: translate(-50%, -50%); }
           .wrapper .view .content .content__dashboard .content__cart .head-body .title {
             color: #8D8D8E;
             margin-bottom: 0.5rem;

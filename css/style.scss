@@ -1317,7 +1317,7 @@ body{
                                 $width-group-img: 108px;
 
                                 img{
-                                    width: 2.5rem;
+                                    width: 2.75rem;
                                 }
                                 img:first-child {
                                     margin-left: 0;
@@ -1461,7 +1461,7 @@ body{
                             position: absolute;
                             top: 50%;
                             left: 50%;
-                            transform: translate(-85%, -50%);
+                            transform: translate(-50%, -50%);
                         }
                         .title{
                             color: $text-gray-color;
