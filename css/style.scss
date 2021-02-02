@@ -9,6 +9,7 @@ body{
     background-color: $background-color;
     color: $text-color;
 }
+
 .wrapper{
     position: relative;
     
@@ -55,6 +56,7 @@ body{
         
     }
 }
+
 .sidebar{
     position: fixed;
     width: 24rem;
@@ -514,14 +516,18 @@ body{
 
     &.in-progress{
         border-color: $yellow-color;   
+        background: $yellow-color;   
     }
     &.new{
         border-color: $btn-color;    
+        background: $btn-color;    
     }
     &.complete{
         border-color: $green-color;    
+        background: $green-color;    
     }
 }
+
 .check-list{
     position: relative;
     margin-top: 2rem;
@@ -586,13 +592,13 @@ body{
         border-color: #66bb6a;
 
         &.big{
-            background-color: $btn-color;
-            border-color: $btn-color;
+            background-color: #66bb6a;
+            border-color: #66bb6a;
 
-            &.same {
-                background-color: #66bb6a;
-                border-color: #66bb6a;
-            }
+            // &.same {
+            //     background-color: #66bb6a;
+            //     border-color: #66bb6a;
+            // }
         }
     }
     input[type="checkbox"]:checked + label:after {
@@ -1189,14 +1195,26 @@ body{
     // _______________Page Progress_______________
     &.content-progress{
         margin: 2rem 0.5rem;
+        width: 100%;
+        display: block;
+        @media (max-width: 1023px){
+            overflow-x: scroll;
+            scrollbar-width: thin;
+            display: -webkit-inline-box;
+        }
+
         .progress-cart{
             background-color: $white-color;
             border-radius: 0.4rem;
             box-shadow: 0 1px 2px $boder-color;
-            min-height: 80rem;
+            min-height: 50rem;
+            margin: 0 0.67rem;
+            width: calc(100%/4 - 16px);
+            display: inline-block;
+            float: left;
+
             @media (max-width: 1023px){
-                min-height: 50rem;
-                margin: 1rem 0;
+                width: 25.5rem;
             }
         
             .cart-head{
@@ -1216,7 +1234,8 @@ body{
                 }
             }
             .cart-body{
-                position: relative;
+                position: relative;              
+
                 .item{
                     margin: 1rem;
                     border: 1px solid #ccc;
@@ -1253,6 +1272,12 @@ body{
                 .handles span {
                     cursor: move;
                 }
+                .highlight {
+                    border: 1px solid red;
+                    font-weight: bold;
+                    font-size: 45px;
+                    background-color: #000;
+                }
 
             }
         }
@@ -1281,10 +1306,10 @@ body{
             th, td {
                 text-align: center;
                 padding: 1.4rem 0;
-                // border-bottom: 1px solid #d8d8d841;
             }
             .user{
                 text-align: start;
+                margin-left: 1rem;
             }
             .col-use{
                 width: 49%;
@@ -1381,6 +1406,7 @@ body{
                         .name-info {
                             font-size: 1.2rem;
                             color: #8D8D8E;
+                            margin-top: 0.25rem;
                         }
                     }
 
@@ -1388,9 +1414,6 @@ body{
             }
             .col-item2{
                 width: 25%;
-                // @media (max-width: 739px){
-                //     width: 25%;
-                // }
 
                 .table-date {
                     display: block;
@@ -1417,16 +1440,6 @@ body{
                     float: left;
                     padding-left: 1rem;
 
-                    .status-icon {
-                        margin-right: 0.7rem;
-                        border-radius: 50%;
-                        border-width: 0.5rem;
-                        border-style: solid;
-                        border-color: #ccc;
-                        height: 0px;
-                        width: 0px;
-                        display: inline-block;
-                    }
                     .status-name {
                         display: inline-block;
                         font-size: 1.2rem;
@@ -1539,9 +1552,8 @@ body{
             border-radius: 0.2rem;
             overflow: hidden;
 
-            th {
-                font-family: 'SFProDisplay Thin';
-                color: $text-gray-color;
+            thead {
+                color: #8D8D8E;
                 font-size: 1.2rem;
             }
             .head-body{
@@ -1571,26 +1583,6 @@ body{
                     float: left;
                     padding-left: 1rem;
 
-                    .status-icon{
-                        margin-right: 0.7rem;
-                        border-radius: 50%;
-                        border-width: 0.5rem;
-                        border-style: solid;
-                        border-color: #ccc;
-                        height: 0px;
-                        width: 0px;
-                        display: inline-block;
-            
-                        &.in-progress{
-                            border-color: $yellow-color;   
-                        }
-                        &.new{
-                            border-color: $btn-color;    
-                        }
-                        &.complete{
-                            border-color: $green-color;    
-                        }
-                    }
                     .status-name{
                         display: inline-block;
                         font-size: 1.2rem;
@@ -1599,11 +1591,5 @@ body{
             }
             
         }
-    }  
-
-    .cart{
-        background-color: $white-color;  
-        border-radius: 0.2rem;
-        border: 1px solid #ccc;
     }  
 }  

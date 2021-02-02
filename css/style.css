@@ -559,11 +559,14 @@ body {
   width: 0px;
   display: inline-block; }
   .status-icon.in-progress {
-    border-color: #FFBE3C; }
+    border-color: #FFBE3C;
+    background: #FFBE3C; }
   .status-icon.new {
-    border-color: #1660C0; }
+    border-color: #1660C0;
+    background: #1660C0; }
   .status-icon.complete {
-    border-color: #1EA85A; }
+    border-color: #1EA85A;
+    background: #1EA85A; }
 
 .check-list {
   position: relative;
@@ -617,11 +620,8 @@ body {
     background-color: #66bb6a;
     border-color: #66bb6a; }
     .check-list input[type="checkbox"]:checked + label.big {
-      background-color: #1660C0;
-      border-color: #1660C0; }
-      .check-list input[type="checkbox"]:checked + label.big.same {
-        background-color: #66bb6a;
-        border-color: #66bb6a; }
+      background-color: #66bb6a;
+      border-color: #66bb6a; }
   .check-list input[type="checkbox"]:checked + label:after {
     opacity: 1; }
   .check-list .info {
@@ -1037,16 +1037,26 @@ body {
           bottom: -1rem;
           right: 0; }
   .content.content-progress {
-    margin: 2rem 0.5rem; }
+    margin: 2rem 0.5rem;
+    width: 100%;
+    display: block; }
+    @media (max-width: 1023px) {
+      .content.content-progress {
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        display: -webkit-inline-box; } }
     .content.content-progress .progress-cart {
       background-color: #fff;
       border-radius: 0.4rem;
       box-shadow: 0 1px 2px #d8d8d841;
-      min-height: 80rem; }
+      min-height: 50rem;
+      margin: 0 0.67rem;
+      width: calc(100%/4 - 16px);
+      display: inline-block;
+      float: left; }
       @media (max-width: 1023px) {
         .content.content-progress .progress-cart {
-          min-height: 50rem;
-          margin: 1rem 0; } }
+          width: 25.5rem; } }
       .content.content-progress .progress-cart .cart-head {
         display: block;
         padding: 1.5rem 1rem;
@@ -1083,6 +1093,11 @@ body {
           cursor: pointer; }
         .content.content-progress .progress-cart .cart-body .handles span {
           cursor: move; }
+        .content.content-progress .progress-cart .cart-body .highlight {
+          border: 1px solid red;
+          font-weight: bold;
+          font-size: 45px;
+          background-color: #000; }
   .content.content-dashboard .head-title {
     font-size: 1.6rem;
     display: inline-block; }
@@ -1097,7 +1112,8 @@ body {
     text-align: center;
     padding: 1.4rem 0; }
   .content.content-dashboard .table1 .user {
-    text-align: start; }
+    text-align: start;
+    margin-left: 1rem; }
   .content.content-dashboard .table1 .col-use {
     width: 49%; }
     .content.content-dashboard .table1 .col-use .table-group {
@@ -1164,7 +1180,8 @@ body {
         transform: translate(0, -50%); }
         .content.content-dashboard .table2 .col-name .table-group .group-name .name-info {
           font-size: 1.2rem;
-          color: #8D8D8E; }
+          color: #8D8D8E;
+          margin-top: 0.25rem; }
   .content.content-dashboard .table2 .col-item2 {
     width: 25%; }
     .content.content-dashboard .table2 .col-item2 .table-date {
@@ -1187,15 +1204,6 @@ body {
     .content.content-dashboard .table2 .col-item2 .status {
       float: left;
       padding-left: 1rem; }
-      .content.content-dashboard .table2 .col-item2 .status .status-icon {
-        margin-right: 0.7rem;
-        border-radius: 50%;
-        border-width: 0.5rem;
-        border-style: solid;
-        border-color: #ccc;
-        height: 0px;
-        width: 0px;
-        display: inline-block; }
       .content.content-dashboard .table2 .col-item2 .status .status-name {
         display: inline-block;
         font-size: 1.2rem; }
@@ -1270,8 +1278,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 0.2rem;
     overflow: hidden; }
-    .content.content-dashboard .content-cart2 th {
-      font-family: 'SFProDisplay Thin';
+    .content.content-dashboard .content-cart2 thead {
       color: #8D8D8E;
       font-size: 1.2rem; }
     .content.content-dashboard .content-cart2 .head-body {
@@ -1294,25 +1301,6 @@ body {
       .content.content-dashboard .content-cart2 .head-body .status {
         float: left;
         padding-left: 1rem; }
-        .content.content-dashboard .content-cart2 .head-body .status .status-icon {
-          margin-right: 0.7rem;
-          border-radius: 50%;
-          border-width: 0.5rem;
-          border-style: solid;
-          border-color: #ccc;
-          height: 0px;
-          width: 0px;
-          display: inline-block; }
-          .content.content-dashboard .content-cart2 .head-body .status .status-icon.in-progress {
-            border-color: #FFBE3C; }
-          .content.content-dashboard .content-cart2 .head-body .status .status-icon.new {
-            border-color: #1660C0; }
-          .content.content-dashboard .content-cart2 .head-body .status .status-icon.complete {
-            border-color: #1EA85A; }
         .content.content-dashboard .content-cart2 .head-body .status .status-name {
           display: inline-block;
           font-size: 1.2rem; }
-  .content .cart {
-    background-color: #fff;
-    border-radius: 0.2rem;
-    border: 1px solid #ccc; }
